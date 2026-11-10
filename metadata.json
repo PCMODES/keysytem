@@ -1,0 +1,6 @@
+{
+  "name": "PC HUB CENTER",
+  "description": "Lightweight, reusable Android License Activation System with Firestore validation, RSA-signed offline tokens, and device binding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

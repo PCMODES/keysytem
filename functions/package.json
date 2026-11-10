@@ -1,0 +1,17 @@
+{
+  "name": "pchub-center-functions",
+  "version": "1.0.0",
+  "description": "PC HUB CENTER License Activation & Admin Backend Functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "engines": {
+    "node": "18"
+  }
+}

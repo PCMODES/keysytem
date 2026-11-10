@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "entities": {
+    "License": {
+      "collection": "licenses",
+      "documentId": "licenseKey",
+      "fields": {
+        "licenseKey": { "type": "string", "required": true },
+        "productId": { "type": "string", "required": true },
+        "status": { "type": "string", "required": true, "enum": ["UNACTIVATED", "ACTIVE", "BLOCKED", "BANNED", "EXPIRED"] },
+        "type": { "type": "string", "required": true, "enum": ["7_DAYS", "30_DAYS", "90_DAYS", "180_DAYS", "365_DAYS", "LIFETIME", "CUSTOM"] },
+        "durationDays": { "type": "number", "required": true },
+        "boundDeviceId": { "type": "string", "required": true },
+        "deviceModel": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "activationDate": { "type": "timestamp", "required": false },
+        "expiresAt": { "type": "timestamp", "required": false },
+        "lastVerificationDate": { "type": "timestamp", "required": false },
+        "allowedPackageName": { "type": "string", "required": false },
+        "notes": { "type": "string", "required": false }
+      }
+    },
+    "ActivationLog": {
+      "collection": "activations",
+      "documentId": "auto",
+      "fields": {
+        "licenseKey": { "type": "string", "required": true },
+        "productId": { "type": "string", "required": true },
+        "deviceId": { "type": "string", "required": true },
+        "deviceModel": { "type": "string", "required": true },
+        "action": { "type": "string", "required": true },
+        "timestamp": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}

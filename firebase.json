@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-pchubcen-cf4bd00a-08d2-48d4-b0ea-3d945bf3d707",
+      "rules": "firestore.rules"
+    }
+  ]
+}
